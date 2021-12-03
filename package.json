@@ -1,0 +1,15 @@
+{
+  "name": "rest-page",
+  "version": "1.0.0",
+  "description": "Practice webpage for a made up restaurant to use webpack and modules in real world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Wilson",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
