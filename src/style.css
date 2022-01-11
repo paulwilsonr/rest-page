@@ -1,3 +1,38 @@
-.restName {
+#navigation {
+    display: grid;
+    grid-template-columns: 1fr, 150px, 150px, 150px, 150px, 1fr;
+    grid-template-rows: 1fr, 1fr;
     background-color: yellow;
+    width: 100%;
+}
+
+#content {
+    text-align: center;
+}
+
+.restName {
+    
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    grid-column: 1 / span 6;
+    grid-row: 1 / 1;
+}
+
+button {
+    padding: 0;
+    background-color: yellow;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0, 25px; 
+    width: 100px;
+}
+
+
+#proofPicture {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 5px auto;
 }
