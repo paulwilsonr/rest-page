@@ -3,6 +3,7 @@ import 'owl.carousel';
 
 $(document).ready(function(){
     $('.carousel').owlCarousel({
+        onTranslated: changeNavColor,
         loop:true,
         margin:0,
         nav:true,
@@ -21,3 +22,16 @@ $(document).ready(function(){
         items:9,
     })
 })
+
+
+function changeNavColor(event) {
+    if(event.item.index === 3 || event.item.index  === 4){
+        console.log('brown');
+        if($(".navColor").hasClass('whiteText')){
+            $(".navColor").toggleClass('whiteText brownText');
+        };
+    } else {
+        console.log('white')
+        $(".navColor").toggleClass("brownText whiteText");
+    }
+}
