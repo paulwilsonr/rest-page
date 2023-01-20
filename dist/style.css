@@ -5,6 +5,7 @@
     --tan: rgba(254,235,225,255);
     --yellow: rgba(255,179,0,255);
     box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
@@ -15,6 +16,86 @@
 li {
     list-style: none;
 }
+
+/*Text Styling*/
+
+.textSize1 {
+    font-size: 12px;
+}
+
+.textSize2 {
+    font-size: 20px;
+}
+
+.textSize3 {
+    font-size: 30px;
+
+}
+.textSize4 {
+    font-size: 70px;
+}
+
+.orangeText {
+    color: var(--orange);
+}
+
+.brownText {
+    color: var(--brown);
+}
+
+.whiteText {
+    color: var(--white);
+}
+
+.boldText {
+    font-weight: 600;
+}
+
+.extraBoldText {
+    font-weight: 900;
+}
+
+/*Button Styling*/
+
+.button {
+    border: none;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 15px;
+}
+
+.orange {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.orange:hover {
+    background-color: var(--brown);
+}
+
+.white {
+    color: black;
+    background-color: var(--white);
+    border: 2px solid var(--orange);
+    padding: 8px 20px;
+}
+
+.white:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.yellow {
+    background-color: var(--yellow);
+    color: var(--brown);
+}
+
+.yellow:hover {
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+/*Navigation Bar*/
 
 nav {
    width: 80%; 
@@ -33,8 +114,6 @@ nav {
     padding: 0;
 }
 .navList > li > a {
-   font-weight: 600; 
-   color: var(--white);
    text-decoration: none;
    font-size: 14px;
 }
@@ -45,53 +124,6 @@ nav {
 
 #navLogo {
     padding: 0 225px;
-}
-
-.button {
-    border: none;
-    border-radius: 20px;
-    padding: 13px 20px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.orange {
-    background-color: var(--orange);
-    color: var(--white);
-}
-
-.orange:hover {
-    background-color: var(--brown);
-}
-
-.largeText {
-    font-size: 70px;
-    font-weight: 900;
-}
-
-.mediumText {
-    font-size: 25px;
-}
-
-.smallText {
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.tinyText {
-    font-size: 12px;
-}
-
-.orangeText {
-    color: var(--orange);
-}
-
-.brownText {
-    color: var(--brown);
-}
-
-.whiteText {
-    color: var(--white);
 }
 
 .carousel {
@@ -124,28 +156,8 @@ nav {
     width: 110%;
 }
 
-.favText {
-    color: var(--brown);
-}
-
-.white {
-    color: black;
-    background-color: var(--white);
-    border: 2px solid var(--orange);
-    padding: 8px 20px;
-}
-
-.white:hover {
-    background-color: var(--orange);
-    color: var(--white);
-}
-
-#featuredTitle {
-    color: var(--orange);
-}
-
-#featuredText {
-    font-size: 20px;
+#featuredCardText {
+    width: 400px;
 }
 
 .learnMore {
@@ -164,7 +176,6 @@ nav {
 #learnText {
     grid-area: 1 / 2 / 2 / 3;
     align-self: end;
-    color: var(--white);
 }
 
 .learnButton {
@@ -195,16 +206,6 @@ nav {
     color: var(--brown);
 }
 
-.yellow {
-    background-color: var(--yellow);
-    color: var(--brown);
-}
-
-.yellow:hover {
-    background-color: var(--brown);
-    color: var(--white);
-}
-
 #partyButton {
     align-self: start;
 }
@@ -217,7 +218,7 @@ nav {
 
 .extrasCard {
     display: grid;
-    grid-template: 1fr 75px 1fr / 1fr 2fr;
+    grid-template: 1fr 75px 47px / 1fr 2fr;
     padding: 50px 20px;
 }   
 
@@ -228,11 +229,16 @@ nav {
 }
 
 .extrasCard > a {
-    font-size: 18px;
-    text-decoration-color: var(--orange);
-    font-weight: 600;
-    text-decoration-thickness: 2px;
-    
+    margin-top: 20px;
+    text-decoration: none;
+    border-bottom: var(--orange) solid 2px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: max-content;
+}
+
+.extrasCard>a:hover {
+    color: var(--orange);
 }
 
 .extrasCard > h3 {
