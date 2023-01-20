@@ -1,0 +1,290 @@
+:root {
+    --white: rgba(255,255,255,255);
+    --orange: rgba(229,46,0,255);
+    --brown: rgba(78,1,1,255);
+    --tan: rgba(254,235,225,255);
+    --yellow: rgba(255,179,0,255);
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+   width: 80%; 
+   margin: 0 10%;
+   position: absolute;
+   z-index: 10;
+}
+
+.navList {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.navList > li > a {
+   font-weight: 600; 
+   color: var(--white);
+   text-decoration: none;
+   font-size: 14px;
+}
+
+.navList > li > a:hover {
+    color: var(--orange);
+}
+
+#navLogo {
+    padding: 0 225px;
+}
+
+.button {
+    border: none;
+    border-radius: 20px;
+    padding: 13px 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.orange {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.orange:hover {
+    background-color: var(--brown);
+}
+
+.largeText {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.mediumText {
+    font-size: 25px;
+}
+
+.smallText {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.tinyText {
+    font-size: 12px;
+}
+
+.orangeText {
+    color: var(--orange);
+}
+
+.brownText {
+    color: var(--brown);
+}
+
+.whiteText {
+    color: var(--white);
+}
+
+.carousel {
+    height: 950px;
+    margin-bottom: 20px;
+}
+
+
+.carouselImage {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
+
+.menuFavItemsSlider {
+    margin: 50px 0;
+}
+
+.favCard {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: space-between;
+    height: 350px;
+    align-items: center;
+}
+
+.favImage {
+    height: auto;
+    width: 110%;
+}
+
+.favText {
+    color: var(--brown);
+}
+
+.white {
+    color: black;
+    background-color: var(--white);
+    border: 2px solid var(--orange);
+    padding: 8px 20px;
+}
+
+.white:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+#featuredTitle {
+    color: var(--orange);
+}
+
+#featuredText {
+    font-size: 20px;
+}
+
+.learnMore {
+    background-image: url("../src/images/hatCreekStore.webp");
+    width: min(1900px, 80%);
+    height: 600px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: 100px auto;
+    border-radius: 30px;
+    display: grid;
+    grid-template: 400px 200px / 1fr 1fr;
+    row-gap: 20px;
+}
+
+#learnText {
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: end;
+    color: var(--white);
+}
+
+.learnButton {
+    grid-area: 2/2/3/3;
+    align-self: start;
+    width: 400px;
+}
+
+.bookParty {
+    width: min(1900px, 80%);
+    display: grid;
+    grid-template: 2fr 50px 1fr / 1fr 1fr;
+    margin: 50px auto;
+    row-gap: 20px;
+}
+
+#partyImg {
+    width: 100%;
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+#partyTitle {
+    color: var(--brown);
+    align-self: end;
+}
+
+#partyText {
+    color: var(--brown);
+}
+
+.yellow {
+    background-color: var(--yellow);
+    color: var(--brown);
+}
+
+.yellow:hover {
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+#partyButton {
+    align-self: start;
+}
+
+.extrasContainer {
+    display: flex;
+    background-color: var(--tan);
+    justify-content: space-evenly;
+}
+
+.extrasCard {
+    display: grid;
+    grid-template: 1fr 75px 1fr / 1fr 2fr;
+    padding: 50px 20px;
+}   
+
+.extrasCard > img {
+    grid-area: 1/1/4/2;
+    height: 200px;
+    width: auto;
+}
+
+.extrasCard > a {
+    font-size: 18px;
+    text-decoration-color: var(--orange);
+    font-weight: 600;
+    text-decoration-thickness: 2px;
+    
+}
+
+.extrasCard > h3 {
+    align-self: end;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--brown);
+    display: flex;
+    flex-direction: column;
+}
+
+.footerCardHolder > img {
+    width: 200px;
+}
+
+.footerCardHolder {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    padding: 65px;
+    margin: 0 auto;
+}
+
+.footerLinksCard >ul >li {
+    padding-top: 20px
+}
+
+.footerLinksCard > h3 {
+    padding-bottom: 10px;
+}
+
+.footerLinks {
+    text-decoration: none;
+}
+
+.copywrite {
+    display: flex;
+    padding-left: 13%;
+}
+
+.copywrite > p {
+    margin: 32px 16px;
+}
+
+.rightBorder {
+    border-right: 1px var(--white) solid;
+    padding: 2px 25px;
+}
+
+#privacy {
+    align-self: center;
+    padding-left: 25px;
+}
